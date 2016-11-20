@@ -11,9 +11,9 @@ import org.springframework.web.portlet.bind.annotation.RenderMapping;
 @RequestMapping(value="VIEW")
 public class SamplePortlet {
 	
-
+String VIEW="view";
     @RenderMapping
     public String showForm(RenderRequest request, RenderResponse response) throws Exception {
-		return "view";
+		return VIEW;
 	}
 }
